@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<h1> This blog content will Delete </h1>
+<form action="" method="POST">
+  {% csrf_token %}
+
+
+<p>ooops content will delete</p>
+<h3>!!!warning</h3>
+<p>!!!!!!!!! confirm to delete: {{batman.title}}</p>
+
+
+  <input type="submit" value="Confirm">
+</form>
+
+{% endblock content %}
